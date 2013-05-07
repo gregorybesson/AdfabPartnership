@@ -1,0 +1,30 @@
+<?php $this->plugin('translate')->setTranslatorTextDomain('adfabpartnership'); ?>
+<?php $downloadLink = $this->url('zfcadmin/adfabpartnership_admin/download', array('partnerId' => $this->partner->getId()));?>
+<?php
+$fm = $this->flashMessenger()->setNamespace('adfabpartnership')->getMessages();
+if (isset($fm[0]))
+{
+    print '<span class=>' . $fm[0] . '</span>';
+}
+?>
+<a href='<?php echo $downloadLink ?>'>Export CSV</a>
+<table class="table">
+    <tr>
+        <th><?php echo $this->translate('Id'); ?></th>
+        <th><?php echo $this->translate('Prénom'); ?></th>
+        <th><?php echo $this->translate('Nom'); ?></th>
+        <th><?php echo $this->translate('email'); ?></th>
+        <th><?php echo $this->translate('Actif'); ?></th>
+        <th></th>
+    </tr>
+    <?php foreach ($this->subscribers as $subscriber): ?>
+        <tr>
+            <td><?php echo $subscriber->getId() ?></td>
+            <td><?php echo $subscriber->getUser()->getFirstname() ?></td>
+            <td><?php echo $subscriber->getUser()->getLastname() ?></td>
+            <td><?php echo $subscriber->getUser()->getEmail() ?></td>
+            <td><?php echo ($subscriber->getActive())? $this->translate('Actif'):$this->translate('inactif')?></td>
+        </tr>
+    <?php endforeach; ?>
+</table>
+<?php //echo $this->paginationControl($this->partners, 'Sliding', 'adfab-partnership/admin/pagination_partnerlist.phtml'); ?>
