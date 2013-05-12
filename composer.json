@@ -1,5 +1,5 @@
 {
-    "name": "adfab/adfab-partnership",
+    "name": "adfab/partnership",
     "description": "A module for managing partnershipd for AdFab ZF2 dev",
     "type": "library",
     "license": "BSD-3-Clause",
@@ -28,7 +28,7 @@
 		"doctrine/doctrine-orm-module" : "*",
 		"zf-commons/zfc-base" : "0.*",
 		"zf-commons/zfc-admin" : "0.*",
-		"adfab/adfab-core" : "dev-master"
+		"adfab/core" : "dev-master"
 		
     },
     "require-dev": {
