@@ -370,7 +370,7 @@ class Partner
                         'name' => 'StringLength',
                         'options' => array(
                             'encoding' => 'UTF-8',
-                            'min' => 5,
+                            'min' => 2,
                             'max' => 255
                         )
                     )
