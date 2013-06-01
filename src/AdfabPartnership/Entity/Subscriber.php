@@ -22,7 +22,7 @@ class Subscriber
     protected $id;
 
     /**
-     * @ORM\ManyToOne(targetEntity="AdfabUser\Entity\User")
+     * @ORM\ManyToOne(targetEntity="AdfabUser\Entity\UserInterface")
      * @ORM\JoinColumn(name="user_id", referencedColumnName="user_id")
      **/
     protected $user;
