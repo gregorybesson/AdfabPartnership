@@ -13,6 +13,7 @@ use Doctrine\ORM\Mapping\PreUpdate;
  */
 class Subscriber
 {
+
     /**
      * @ORM\Id
      * @ORM\Column(type="integer");
