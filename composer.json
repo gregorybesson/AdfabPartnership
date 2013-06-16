@@ -29,7 +29,6 @@
 		"zf-commons/zfc-base" : "0.*",
 		"zf-commons/zfc-admin" : "0.*",
 		"adfab/core" : "0.2.*"
-		
     },
     "require-dev": {
         "doctrine/doctrine-orm-module": "0.*"
