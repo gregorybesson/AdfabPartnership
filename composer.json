@@ -1,42 +1,42 @@
 {
-	"name" : "adfab/partnership",
-	"description" : "A module for managing partnershipd for AdFab ZF2 dev",
-	"type" : "library",
-	"authors" : [{
-			"name" : "Greg Besson",
-			"email" : "gregory.besson@adfab.fr",
-			"homepage" : "http://www.adfab.fr"
-		}
-	],
-	"keywords" : [
-		"zf2",
-		"playground",
-		"adfab-partnership"
-	],
-	"homepage" : "https://github.com/gregorybesson/AdfabPartnership",
-	"license" : [
-		"BSD-3-Clause"
-	],
-	"require" : {
-		"doctrine/doctrine-orm-module" : "*",
-		"zendframework/zend-stdlib" : "~2.1",
-		"php" : ">=5.3.3",
-		"zf-commons/zfc-base" : "0.*",
+    "name": "adfab/partnership",
+    "description": "A module for managing partnershipd for AdFab ZF2 dev",
+    "type": "library",
+    "license": "BSD-3-Clause",
+    "keywords": [
+        "zf2",
+        "playground",
+        "adfab-partnership"
+    ],
+    "homepage": "https://github.com/gregorybesson/AdfabPartnership",
+    "authors": [
+        {
+            "name": "Greg Besson",
+            "email": "gregory.besson@adfab.fr",
+            "homepage": "http://www.adfab.fr"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.3.3",
 		"zendframework/zend-mvc" : "~2.1",
 		"zendframework/zend-form" : "~2.1",
 		"zendframework/zend-loader" : "~2.1",
 		"zendframework/zend-servicemanager" : "~2.1",
-		"adfab/core" : "0.*",
 		"zendframework/zend-modulemanager" : "~2.1",
-		"zf-commons/zfc-admin" : "0.*"
-	},
-	"require-dev" : {
-		"doctrine/doctrine-orm-module" : "0.*"
-	},
-	"autoload" : {
+		"zendframework/zend-stdlib" : "~2.1",
+		"doctrine/doctrine-orm-module" : "*",
+		"zf-commons/zfc-base" : "0.*",
+		"zf-commons/zfc-admin" : "0.*",
+		"adfab/core" : "dev-master"
+		
+    },
+    "require-dev": {
+        "doctrine/doctrine-orm-module": "0.*"
+    },
+    "autoload" : {
 		"psr-0" : {
 			"AdfabPartnership" : "src/"
 		}
-	},
-	"minimum-stability" : "dev"
+	}
 }
