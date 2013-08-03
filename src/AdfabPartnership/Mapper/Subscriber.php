@@ -6,7 +6,7 @@ use Doctrine\ORM\EntityManager;
 use AdfabPartnership\Options\ModuleOptions;
 use ZfcBase\Mapper\AbstractDbMapper;
 
-class Subscriber extends AbstractDbMapper
+class Subscriber
 {
     /**
      * @var \Doctrine\ORM\EntityManager
