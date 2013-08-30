@@ -45,39 +45,43 @@ return array(
 
     'router' => array(
         'routes' => array(
-            'partnership' => array(
-                'type' => 'Zend\Mvc\Router\Http\Segment',
-                'options' => array(
-                    'route'    => '/partnership[/:id]',
-                    'defaults' => array(
-                        'controller' => 'adfabpartnership',
-                        'action'     => 'index',
-                    ),
-                ),
-                'may_terminate' => true,
-                'child_routes' =>array(
-                    'share' => array(
-                        'type' => 'Literal',
-                        'options' => array(
-                            'route' => '/share',
-                            'defaults' => array(
-                                'controller' => 'adfabpartnership',
-                                'action'     => 'share'
-                            ),
-                        ),
-                    ),
-                    'ajax_newsletter' => array(
-                        'type' => 'Literal',
-                        'options' => array(
-                            'route' => '/ajax-newsletter',
-                            'defaults' => array(
-                                'controller' => 'adfabpartnership',
-                                'action'     => 'ajaxNewsletter',
-                            ),
-                        ),
-                    ),
-                ),
-            ),
+        	'frontend' => array(
+       			'child_routes' => array(        		
+		            'partnership' => array(
+		                'type' => 'Zend\Mvc\Router\Http\Segment',
+		                'options' => array(
+		                    'route'    => 'partnership[/:id]',
+		                    'defaults' => array(
+		                        'controller' => 'adfabpartnership',
+		                        'action'     => 'index',
+		                    ),
+		                ),
+		                'may_terminate' => true,
+		                'child_routes' =>array(
+		                    'share' => array(
+		                        'type' => 'Literal',
+		                        'options' => array(
+		                            'route' => '/share',
+		                            'defaults' => array(
+		                                'controller' => 'adfabpartnership',
+		                                'action'     => 'share'
+		                            ),
+		                        ),
+		                    ),
+		                    'ajax_newsletter' => array(
+		                        'type' => 'Literal',
+		                        'options' => array(
+		                            'route' => '/ajax-newsletter',
+		                            'defaults' => array(
+		                                'controller' => 'adfabpartnership',
+		                                'action'     => 'ajaxNewsletter',
+		                            ),
+		                        ),
+		                    ),
+		                ),
+		            ),
+       			),
+        	),
             'zfcadmin' => array(
                 'child_routes' => array(
                     'adfabpartnership_admin' => array(
