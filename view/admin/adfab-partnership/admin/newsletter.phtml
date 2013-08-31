@@ -1,5 +1,5 @@
 <?php $this->plugin('translate')->setTranslatorTextDomain('adfabpartnership'); ?>
-<?php $downloadLink = $this->url('zfcadmin/adfabpartnership_admin/download', array('partnerId' => $this->partner->getId()));?>
+<?php $downloadLink = $this->url('admin/adfabpartnership_admin/download', array('partnerId' => $this->partner->getId()));?>
 <?php
 $fm = $this->flashMessenger()->setNamespace('adfabpartnership')->getMessages();
 if (isset($fm[0]))

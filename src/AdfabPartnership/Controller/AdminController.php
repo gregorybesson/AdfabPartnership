@@ -99,7 +99,7 @@ class AdminController extends AbstractActionController
             if ($partner) {
                 $this->flashMessenger()->setNamespace('adfabpartnership')->addMessage('The partner was created');
 
-                return $this->redirect()->toRoute('zfcadmin/adfabpartnership_admin/list');
+                return $this->redirect()->toRoute('admin/adfabpartnership_admin/list');
             }
         }
 
@@ -130,7 +130,7 @@ class AdminController extends AbstractActionController
             if ($partner) {
                 $this->flashMessenger()->setNamespace('adfabpartnership')->addMessage('The partner was updated');
 
-                return $this->redirect()->toRoute('zfcadmin/adfabpartnership_admin/list');
+                return $this->redirect()->toRoute('admin/adfabpartnership_admin/list');
             }
         }
 
@@ -156,7 +156,7 @@ class AdminController extends AbstractActionController
             $this->flashMessenger()->setNamespace('adfabpartnership')->addMessage('The partner was deleted');
         }
 
-        return $this->redirect()->toRoute('zfcadmin/adfabpartnership_admin/list');
+        return $this->redirect()->toRoute('admin/adfabpartnership_admin/list');
     }
 
     public function setOptions(ModuleOptions $options)

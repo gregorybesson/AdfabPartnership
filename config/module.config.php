@@ -35,6 +35,17 @@ return array(
         	__DIR__ . '/../view/frontend',
         ),
     ),
+	
+	'core_layout' => array(
+		'AdfabPartnership' => array(
+			'default_layout' => 'layout/2columns-left',
+			'controllers' => array(
+				'adfabpartnership_admin' => array(
+					'default_layout' => 'application/layout/admin/admin',
+				),
+			),
+		),
+	),
 
     'controllers' => array(
         'invokables' => array(
@@ -82,7 +93,7 @@ return array(
 		            ),
        			),
         	),
-            'zfcadmin' => array(
+            'admin' => array(
                 'child_routes' => array(
                     'adfabpartnership_admin' => array(
                         'type' => 'Literal',
@@ -169,19 +180,19 @@ return array(
             'adfabpartnershipadmin' => array(
                 'order' => 80,
                 'label' => 'Partenaires',
-                'route' => 'zfcadmin/adfabpartnership_admin/list',
+                'route' => 'admin/adfabpartnership_admin/list',
                 'resource' => 'partner',
                 'privilege' => 'list',
                 'pages' => array(
                     'list' => array(
                         'label' => 'Liste des partenaires',
-                        'route' => 'zfcadmin/adfabpartnership_admin/list',
+                        'route' => 'admin/adfabpartnership_admin/list',
                         'resource' => 'partner',
                         'privilege' => 'list',
                     ),
                     'create' => array(
                         'label' => 'Créer un nouveau partenaire',
-                        'route' => 'zfcadmin/adfabpartnership_admin/create',
+                        'route' => 'admin/adfabpartnership_admin/create',
                         'resource' => 'partner',
                         'privilege' => 'list',
                     ),

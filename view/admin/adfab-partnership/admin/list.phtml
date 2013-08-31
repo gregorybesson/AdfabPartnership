@@ -8,7 +8,7 @@ if (isset($fm[0]))
 <?php $this->plugin('translate')->setTranslatorTextDomain('adfabpartnership'); ?>
 
 <ul class="liste-buttons">
-	<li class="btn-admin"><a href="<?php echo $this->url('zfcadmin/adfabpartnership_admin/create');?>"><?php echo $this->translate('Ajouter un partenaire'); ?></a></li>
+	<li class="btn-admin"><a href="<?php echo $this->url('admin/adfabpartnership_admin/create');?>"><?php echo $this->translate('Ajouter un partenaire'); ?></a></li>
 </ul>
 
 <h1><?php echo $this->translate('Les partenaires'); ?></h1>
@@ -23,9 +23,9 @@ if (isset($fm[0]))
         <th></th>
     </tr>
     <?php foreach ($this->partners as $partner): ?>
-        <?php $editLink   = $this->url('zfcadmin/adfabpartnership_admin/edit',       array('partnerId' => $partner->getId()));?>
-        <?php $deleteLink = $this->url('zfcadmin/adfabpartnership_admin/remove',     array('partnerId' => $partner->getId()));?>
-        <?php $newsletterLink = $this->url('zfcadmin/adfabpartnership_admin/newsletter', array('partnerId' => $partner->getId()));?>
+        <?php $editLink   = $this->url('admin/adfabpartnership_admin/edit',       array('partnerId' => $partner->getId()));?>
+        <?php $deleteLink = $this->url('admin/adfabpartnership_admin/remove',     array('partnerId' => $partner->getId()));?>
+        <?php $newsletterLink = $this->url('admin/adfabpartnership_admin/newsletter', array('partnerId' => $partner->getId()));?>
         <tr>
             <!--<td><?php echo $partner->getId() ?></td>-->
             <td><?php echo $partner->getName() ?></td>
@@ -44,7 +44,7 @@ if (isset($fm[0]))
 </table>
 
 <ul class="liste-buttons bottom">
-	<li class="btn-admin bottom"><a href="<?php echo $this->url('zfcadmin/adfabpartnership_admin/create');?>"><?php echo $this->translate('Ajouter un partenaire'); ?></a></li>
+	<li class="btn-admin bottom"><a href="<?php echo $this->url('admin/adfabpartnership_admin/create');?>"><?php echo $this->translate('Ajouter un partenaire'); ?></a></li>
 </ul>
 
 

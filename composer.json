@@ -27,8 +27,7 @@
 		"zendframework/zend-loader" : "~2.1",
 		"zendframework/zend-servicemanager" : "~2.1",
 		"adfab/core" : "0.*",
-		"zendframework/zend-modulemanager" : "~2.1",
-		"zf-commons/zfc-admin" : "0.*"
+		"zendframework/zend-modulemanager" : "~2.1"
 	},
     "require-dev" : {
 		"phpunit/phpunit" : "3.7.*"
