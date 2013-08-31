@@ -41,7 +41,7 @@ return array(
 			'default_layout' => 'layout/2columns-left',
 			'controllers' => array(
 				'adfabpartnership_admin' => array(
-					'default_layout' => 'application/layout/admin/admin',
+					'default_layout' => 'layout/admin',
 				),
 			),
 		),
